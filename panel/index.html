@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>超级剪贴板</title>
+  <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+  <main id="app" class="panel-shell">
+    <header class="topbar" data-region="top">
+      <div class="identity">
+        <span class="brand-icon" aria-hidden="true"><span class="brand-icon-leaf"></span></span>
+        <h1>剪贴板</h1>
+      </div>
+      <button id="pin-toggle" class="icon-button" type="button" aria-label="置顶面板" aria-pressed="false">
+        <span class="icon icon-pin" aria-hidden="true"></span>
+      </button>
+    </header>
+
+    <section class="search-row" data-region="search">
+      <label class="search-field">
+        <span class="search-field-icon icon-search" aria-hidden="true"></span>
+        <input id="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="搜索文字或图片" aria-label="搜索剪贴板内容">
+      </label>
+    </section>
+
+    <nav class="tabs" data-region="tabs" aria-label="剪贴板分类">
+      <button class="tab is-active" type="button" data-type="all" aria-pressed="true">全部</button>
+      <button class="tab" type="button" data-type="text" aria-pressed="false">文本</button>
+      <button class="tab" type="button" data-type="image" aria-pressed="false">图片</button>
+    </nav>
+
+    <section id="content" class="content" data-region="content" aria-live="polite">
+      <div id="empty-state" class="empty-state" hidden>
+        <img class="empty-qiqi" src="assets/avatar-qiqi.png" width="72" height="76" alt="">
+        <h2 id="empty-title">剪贴板还是空的</h2>
+        <p id="empty-description">复制文本或图片后，会自动出现在这里</p>
+      </div>
+      <div id="columns" class="columns" role="list" aria-label="剪贴板历史"></div>
+    </section>
+
+    <footer class="footer" data-region="footer">
+      <span id="history-count" class="history-count">0 条记录</span>
+      <button id="clear-all" class="clear-button" type="button"><span class="clear-icon" aria-hidden="true">♜</span>清空所有</button>
+    </footer>
+
+    <div id="status" class="status" role="status" aria-live="polite" hidden></div>
+  </main>
+
+  <script src="markdown.js"></script>
+  <script src="panel.js"></script>
+</body>
+</html>
