@@ -14,7 +14,7 @@ An official marketplace plugin for 吐梨邦 / Desktop Pet: keep text and image 
 2. 阅读并同意剪贴板、面板、派差事和存储权限。安装后立即开始记录剪贴板；未安装时不运行。
 3. 在已安装插件列表打开面板，或使用默认快捷键 **⌘⇧B（macOS）/ Ctrl+Shift+B（Windows/Linux）**。快捷键可在插件详情页修改。
 
-插件版本：`1.1.0`；插件 ID：`super-clipboard`；SDK 版本：`1`；最低宿主版本：`0.21.0`，这是移除预装插件后的安装兼容边界。本次配套宿主源码已适配；正式宿主安装包另行发布。旧版客户端不能直接安装此市场版本，请在正式兼容版本发布后升级。市场列表受宿主刷新和网络状态影响。
+插件版本：`1.1.0`；插件 ID：`super-clipboard`；SDK 版本：`1`；最低宿主版本：`0.21.0`，这是移除预装插件后的安装兼容边界。宿主目前处于测试阶段，请通过受邀测试渠道获取。旧版客户端请先升级宿主，再安装此市场版本。市场列表受宿主刷新和网络状态影响。
 
 也可从 [GitHub Releases](https://github.com/ShunyuYao/pet-plugin-super-clipboard/releases) 下载 `plugin.zip`，校验随附的 `plugin.zip.sha256` 后，通过插件管理的 ZIP 安装入口安装。不要用 GitHub 自动生成的 “Source code” ZIP 代替插件安装包。
 
@@ -81,7 +81,7 @@ npm run build
 2. Review and approve the clipboard, UI, errands, and storage permissions. History collection starts after installation and approval; the plugin does not run when it is not installed.
 3. Open its panel from the installed plugins list, or press **⌘⇧B on macOS / Ctrl+Shift+B on Windows and Linux**. Change the shortcut in the plugin details page.
 
-Plugin version: `1.1.0`; plugin ID: `super-clipboard`; SDK API version: `1`; minimum host version: `0.21.0`, the installation boundary after removing preinstalled plugins. The companion host source has been adapted; the production host installer is released separately. Older clients cannot directly install this marketplace version; upgrade after a compatible production host is released. Marketplace visibility also depends on the host's refresh and network state.
+Plugin version: `1.1.0`; plugin ID: `super-clipboard`; SDK API version: `1`; minimum host version: `0.21.0`, the installation boundary after removing preinstalled plugins. The host is currently in testing and is available through invitation-only testing channels. Upgrade older hosts before installing this marketplace version. Marketplace visibility also depends on the host's refresh and network state.
 
 Alternatively, download `plugin.zip` from [GitHub Releases](https://github.com/ShunyuYao/pet-plugin-super-clipboard/releases), verify it against `plugin.zip.sha256`, and use the ZIP installation entry in plugin management. GitHub's automatically generated “Source code” ZIP is not the installable plugin package.
 
